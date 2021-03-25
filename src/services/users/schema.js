@@ -59,7 +59,6 @@ userSchema.static("addProductToCart", async function (id, product) {
 });
 
 userSchema.static("removeProductFromCart", async function (id, product) {
-  console.log(product, "qka po na kthen");
   await UserSchema.findOneAndUpdate(
     { _id: id },
     {
